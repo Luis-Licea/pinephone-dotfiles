@@ -7,6 +7,6 @@ cd ~
 glt clone https://luis-licea/pinephone-dotfiles.git
 git config --local status.showUntrackedFiles no
 .local/bin/scripts/install-nix.sh
-git checkout
+git checkout # pass --force to restore all files
 home-manager switch
 ```
