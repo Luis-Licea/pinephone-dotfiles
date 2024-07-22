@@ -24,8 +24,10 @@
     bat
     bat-extras.batman
     brave
+    castor
     ffmpeg
     glide-media-player
+    gnome.polari
     helix
     nil
     sshfs
