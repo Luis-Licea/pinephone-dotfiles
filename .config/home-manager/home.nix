@@ -37,7 +37,11 @@
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
     # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
+    font-awesome
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
@@ -46,6 +50,16 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+  fonts.fontconfig.enable = true;
+  dconf.settings = {
+      "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+          monospace-font-name = "FiraCode Nerd Font Mono"; # Noto Sans Mono
+          sans-serif-font-name = "Noto Sans";
+          serif-font-name = "Noto Serif";
+
+      };
+  };
   programs = {
     starship.enable = true;
     neovim = {
