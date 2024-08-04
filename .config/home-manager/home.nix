@@ -31,6 +31,7 @@
     noto-fonts-cjk
     noto-fonts-emoji
     sshfs
+    tldr
     vlc
     w3m
 
@@ -88,7 +89,6 @@
     ".w3m/mailcap".text = ''
         image/*; eog %s
     '';
-
     ".config/nvim/init.lua".text = ''
         --------------------------------------------------------------------------------
         -- Essential Mappings.
