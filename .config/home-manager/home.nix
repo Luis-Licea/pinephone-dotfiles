@@ -32,6 +32,7 @@
     noto-fonts-emoji
     sshfs
     vlc
+    w3m
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
@@ -84,6 +85,9 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    ".w3m/mailcap".text = ''
+        image/*; eog %s
+    '';
 
     ".config/nvim/init.lua".text = ''
         --------------------------------------------------------------------------------
